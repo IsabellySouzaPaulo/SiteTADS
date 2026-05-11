@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="GestaoPedidosIsa">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/dist/GestaoPedidosIsa.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
