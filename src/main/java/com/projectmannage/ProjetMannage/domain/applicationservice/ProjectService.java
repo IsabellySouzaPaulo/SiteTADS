@@ -5,11 +5,13 @@ import com.projectmannage.ProjetMannage.infrastructure.dto.SaveProjectDataDTO;
 import com.projectmannage.ProjetMannage.domain.model.ProjectStatus;
 import com.projectmannage.ProjetMannage.domain.repository.ProjectRepository;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 @Service
 @RequiredArgsConstructor
+@Slf4j
 public class ProjectService {
 
 
@@ -27,6 +29,7 @@ public class ProjectService {
                 .build();
 
         projectRepository.save(project);
+        log.info("Projeto criado com sucesso {}", project);
         return project;
     }
 }
